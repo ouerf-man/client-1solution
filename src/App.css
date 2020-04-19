@@ -1,38 +1,218 @@
-.App {
+.odometer{
+  font-size: 50px;
+}
+
+#titre-salma {
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
-}
+  font-size: 40px;
+  font-family: "Cambria";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
+
+div#bordure{
+  border-bottom:15px solid darkblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+div.salma-c{
+ text-align: center;
+  margin: auto;
+  color: darkblue;
+}
+.salma-c {
+  padding-top: 50px;
+  height: 250px;
+
+}
+
+
+.item-salma {
+  width: 70%;
+  height: 100%;
+}
+.containsAll{
+  border-bottom: 15px solid darkblue;
+  border-top: 15px solid darkblue;
+  padding-bottom: 20%;
+}
+div#bordure1 {
+  border-bottom:15px solid darkblue;
+  padding-top: 70px;
+  margin-top: 150px;
+}
+.item-salma img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px darkblue solid;
+  border-radius: 50%;
+  width: 170px;
+  height: 200px;
+}
+.item-salma .text-content {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.commande {
+  border-style: solid;
+  border-color: darkblue;
+  padding: 7px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 450px;
+  margin-left: 450px;
+  text-align: left;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.wrapper-s{
+  width: 100%;
+  padding: 10px;
+}
+
+.container-salma{
+  max-width: 500px;
+  height: auto;
+  margin: 0px auto;
+  background: #fff;
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 7px solid darkblue;
+}
+
+.title-salma-2{
+  color: darkblue;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.input-form-s{
+  margin-bottom: 20px;
+}
+
+.input-form-s .label{
+  display: block;
+  font-size: 1em;
+  color: #212121;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.input-form-s .items{
+  margin-bottom: 20px;
+}
+
+.section-1-s .items .input,
+.section-2-s .items .input,
+.section-3-s .items .input{
+  background: transparent;
+  border: 2px solid #BDBDBD;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  color: #212121;
+  border-radius: 3px;
+}
+
+.input-form-s .section-3{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.input-form-s .section-3 .items{
+  width: 48%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-s{
+  background: darkblue;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.cvc{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cvc .tooltip{
+  color: #d4d4d4;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align:center;
+  cursor: pointer;
+}
+
+.cvc .cvc-img{
+  position: absolute;
+  top: -300%;
+  right: 0;
+  background: #5f6c7d;
+  padding: 12px;
+  border-radius: 5px;
+  display: none;
+}
+
+.cvc .cvc-img img{
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.cvc:hover .cvc-img{
+  display: block;
+}
+
+@media screen and (max-width: 460px){
+  .input-form-s .section-3{
+      flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .input-form-s .section-3 .items{
+      width: 100%;
+  }
+  .input-form-s .items{
+      margin-bottom: 10px;
+  }
+
+  .input-form-s{
+      margin-bottom: 15px;
+  }
+  .title-salma-2{
+      font-size: 1.5em;
+      margin-bottom: 15px;
   }
 }
